@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tipcalculator.seclass.qc.edu.tipcalculator.TipCalculatorActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/checkAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check amount:"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="20dp" />
+
+    <EditText
+        android:id="@+id/checkAmountValue"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkAmount"
+        app:layout_constraintLeft_toRightOf="@+id/checkAmount" />
+
+    <TextView
+        android:id="@+id/partySize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Party size:"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="20dp" />
+
+    <EditText
+        android:id="@+id/partySizeValue"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/partySize"
+        app:layout_constraintLeft_toRightOf="@+id/partySize" />
+
+    <Button
+        android:id="@+id/buttonCompute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="COMPUTE TIP"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="140dp" />
+
+
+    <GridLayout
+        android:layout_width="382dp"
+        android:layout_height="150dp"
+        android:layout_column="6"
+        android:layout_row="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="230dp">
+
+        <TextView
+            android:id="@+id/fifteenPercentTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="Tip:   15%" />
+
+        <TextView
+            android:id="@+id/fifteenPercentTipValue"
+            android:layout_width="60dp"
+            android:layout_height="44dp"
+            android:layout_column="1"
+            android:layout_marginRight="20dp"
+            android:layout_row="0"
+            android:inputType="number" />
+
+
+        <TextView
+            android:id="@+id/twentyPercentTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="0"
+            android:layout_marginRight="10dp"
+            android:text="20%" />
+
+        <TextView
+            android:id="@+id/twentyPercentTipValue"
+            android:layout_width="60dp"
+            android:layout_height="44dp"
+            android:layout_column="3"
+            android:layout_marginRight="20dp"
+            android:layout_row="0"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/twentyfivePercentTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="4"
+            android:layout_row="0"
+            android:layout_marginRight="10dp"
+            android:text="25%" />
+
+        <TextView
+            android:id="@+id/twentyfivePercentTipValue"
+            android:layout_width="60dp"
+            android:layout_height="44dp"
+            android:layout_column="5"
+            android:layout_marginRight="20dp"
+            android:layout_row="0"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/totalFifteenPercentTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="Total:  15%" />
+
+        <TextView
+            android:id="@+id/fifteenPercentTotalValue"
+            android:layout_width="60dp"
+            android:layout_height="44dp"
+            android:layout_column="1"
+            android:layout_marginRight="20dp"
+            android:layout_row="1"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/totalTwentyPercentTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:layout_marginRight="10dp"
+            android:text="20%" />
+
+        <TextView
+            android:id="@+id/twentyPercentTotalValue"
+            android:layout_width="60dp"
+            android:layout_height="44dp"
+            android:layout_column="3"
+            android:layout_marginRight="20dp"
+            android:layout_row="1"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/totalTwentyfivePercentTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="4"
+            android:layout_row="1"
+            android:layout_marginRight="10dp"
+            android:text="25%" />
+
+        <TextView
+            android:id="@+id/twentyfivePercentTotalValue"
+            android:layout_width="60dp"
+            android:layout_height="44dp"
+            android:layout_column="5"
+            android:layout_marginRight="20dp"
+            android:layout_row="1"
+            android:inputType="number" />
+
+    </GridLayout>
+
+
+</android.support.constraint.ConstraintLayout>
